@@ -3,9 +3,9 @@ updates:
   - package-ecosystem: "maven"
     directory: "/" 
     schedule:
-      interval: "monthly" 
+      interval: "daily" 
     commit-message:
-      prefix: "maven-version-updates"
+      prefix: "maven"
     groups:
       minor-and-patch:
         patterns:
@@ -13,17 +13,3 @@ updates:
         update-types:
         - "minor"
         - "patch"
-   - package-ecosystem: "docker"
-    directory: "/" 
-    schedule:
-      interval: "monthly" 
-    commit-message:
-      prefix: "docker-version-updates"
-    groups:
-      minor-and-patch:
-        patterns:
-          - "*" 
-        update-types:
-        - "minor"
-        - "patch"
-
